@@ -136,12 +136,70 @@ It supports multiple storage types to meet a wide range of data and application 
 | Read Access to Secondary  | ❌ No              | ❌ No              | ❌ No (unless RA-GRS)             |
 | Use Cases                 | Dev/test, backups | App data, content | DR, regulatory, critical backups |
 
+**Azure regions** : https://learn.microsoft.com/en-us/azure/reliability/regions-list
+
+### Management of Azure Storage Tier : 
+
+<img width="4092" height="6248" alt="image" src="https://github.com/user-attachments/assets/80c33e48-a172-4aac-a4fc-649d820c271b" />
+
 
 #### Create a storage account using portal and Az CLI or Terraform 
 * Storage account : sashareddemo001 (using portal)
 * Storage account : sashareddemo002 (using az cli)  
   `az storage account create --name sashareddemo002 --resource-group rg-shared-demo-002 --location eastus --sku Standard_LRS --kind StorageV2 --access-tier Hot`  
 * Storage account : sa-shared-demo-003 (using terraform) --optional
+
+#### Upload a file to Azure storage blob using a .NET simple program 
+Step 1 : Create a project using console  
+`dotnet new console -n BlobUploader
+cd BlobUploader
+`  
+Step 2 : install SDK package for blobs  
+`dotnet add package Azure.Storage.Blobs`  
+
+Step 3 : replace the code in Program.cs as below  
+
+<pre> 
+using Azure.Storage.Blobs;  
+using System;  
+using System.IO;  
+using System.Threading.Tasks;  
+  
+class Program  
+{  
+    static async Task Main(string[] args)  
+    {  
+        // Replace with your values  
+        string connectionString = "<your-storage-connection-string>";
+        string containerName = "mycontainer";
+        string blobName = "myfile.txt";
+        string localFilePath = @"/Users/yourname/Downloads/myfile.txt"; // Adjust this
+
+        // Create BlobServiceClient
+        BlobServiceClient blobServiceClient = new BlobServiceClient(connectionString);
+
+        // Get container and create if it doesn't exist
+        BlobContainerClient containerClient = blobServiceClient.GetBlobContainerClient(containerName);
+        await containerClient.CreateIfNotExistsAsync();
+
+        // Get BlobClient
+        BlobClient blobClient = containerClient.GetBlobClient(blobName);
+
+        // Upload file
+        using FileStream uploadFileStream = File.OpenRead(localFilePath);
+        await blobClient.UploadAsync(uploadFileStream, overwrite: true);
+        uploadFileStream.Close();
+
+        Console.WriteLine($"✅ File uploaded to: {blobClient.Uri}");
+    }
+}
+</pre>
+
+
+
+
+
+Step 4: run `dotnet run`
 
   
   
