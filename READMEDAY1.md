@@ -1,10 +1,10 @@
-## 1. Azure Cloud Core Concepts
+# 1. Azure Cloud Core Concepts
 Azure is Microsoft’s cloud computing platform offering Infrastructure as a Service (IaaS),
 Platform as a Service (PaaS), and Software as a Service (SaaS), Also CaaS (Container as Service). It provides scalable, pay-as-you-
 go solutions for computing, storage, networking, databases, machine learning, analytics, and
 many more.
 
-# Traditional On-Premises vs. Cloud Computing: Key Differences
+## Traditional On-Premises vs. Cloud Computing: Key Differences
 
 ### 1. Infrastructure Ownership
   * On-Premises: Organizations own, manage, and maintain all hardware and software on-site. This includes physical servers, networking equipment, and data centers.
@@ -39,13 +39,13 @@ many more.
   Delivers fully managed software applications over the internet. Users simply access and use the software without managing any infrastructure or platform components.
   examples:  Office 365, Azure DevOps
 
-## Azure Services
+### Azure Services
 * Compute: Virtual Machines, App Services, Azure Kubernetes Service.
 * Storage: Blob, Table, Queue, File Storage.
 * Networking: VNet, Load Balancer, ExpressRoute.
 * AI & Machine Learning, DevOps, Security.
 
-## Subscribing to Microsoft Azure [How do I start using Azure Services]
+### Subscribing to Microsoft Azure [How do I start using Azure Services]
   ### What You Need First:
   * A Microsoft account (e.g., Outlook, Hotmail, or any email registered with Microsoft)
   * A valid credit/debit card (for identity verification)
