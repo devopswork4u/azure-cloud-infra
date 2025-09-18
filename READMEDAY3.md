@@ -84,3 +84,6 @@ Traffic Manager uses DNS to route users to endpoints based on routing policies s
 * Create a Load Balancer with health probes
 * Configure load balancing rule for port 80
 * Test with browser and simulate failure
+
+  <img width="3052" height="2404" alt="image" src="https://github.com/user-attachments/assets/dd4eadb4-a12e-4904-bed6-9a0434b1f712" />
+
