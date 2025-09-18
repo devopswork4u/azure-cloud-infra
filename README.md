@@ -1,6 +1,6 @@
 # azure-cloud-infra
 
-## Azure Cloud Core Concepts
+## 1. Azure Cloud Core Concepts
 Azure is Microsoft’s cloud computing platform offering Infrastructure as a Service (IaaS),
 Platform as a Service (PaaS), and Software as a Service (SaaS), Also CaaS (Container as Service). It provides scalable, pay-as-you-
 go solutions for computing, storage, networking, databases, machine learning, analytics, and
@@ -49,18 +49,19 @@ many more.
 
 ## Subscribing to Microsoft Azure [How do I start using Azure Services]
   ### What You Need First:
-    * A Microsoft account (e.g., Outlook, Hotmail, or any email registered with Microsoft)
-    * A valid credit/debit card (for identity verification)
-    * A phone number (for security/identity verification)
+  * A Microsoft account (e.g., Outlook, Hotmail, or any email registered with Microsoft)
+  * A valid credit/debit card (for identity verification)
+  * A phone number (for security/identity verification)
   
   ### Steps to Create an Azure Subscription:
-  🔹 Step 1: Go to the Azure Website  https://azure.microsoft.com/en-us/pricing/purchase-options/azure-account/
+   Step 1: Go to the Azure Website  https://azure.microsoft.com/en-us/pricing/purchase-options/azure-account/
     Click on “Start free” (to use the free trial) or “Sign in” if you already have a Microsoft account.
   
-  🔹 Step 2: Sign In or Create a Microsoft Account
+   Step 2: Sign In or Create a Microsoft Account
     If you don’t have one, click “Create one!” and follow the steps.
     If you have one, just sign in.
-  🔹 Step 3: Start the Free Trial (Optional)
+   
+   Step 3: Start the Free Trial (Optional)
 
 ### New users are eligible for:
  $200 USD credit for the first 30 days. Free limited services for 12 months (like Linux/Windows VMs, Storage, etc.)
@@ -72,3 +73,75 @@ many more.
   * Student Subscription	Free credits for students (no card required) – Azure for Students
   * Enterprise Agreement	For large businesses – negotiated pricing
   * Microsoft Customer Agreement (MCA)	Default for most organizations
+
+### Ways to login in Azure 
+  * **Azure portal** - https://portal.azure.com
+  
+  * **Azure CLI (az cli )** - with GUI prompt `az login`
+    * To set a subscription - `az account set --subscription "<subscription_id>"`
+  
+  * **PowerShell** -
+    * To install AZ module `Install-Module -Name Az -AllowClobber -Scope CurrentUser`
+    * Import AZ module `Import-Module Az`
+    * Login to Azure `Connect-AzAccount`
+  
+  * **Azure Cloud shell**
+
+
+### Download az cli here -
+  * (Windows) `https://learn.microsoft.com/en-us/cli/azure/install-azure-cli-windows?view=azure-cli-latest&pivots=winget`
+  * (Mac) `brew update && brew install azure-cli`
+
+#### Create a resource group using portal and Az CLI or Terraform 
+* Resource group Name : rg-shared-demo-001 (using portal)
+* Resource group Name : rg-shared-demo-002 (using az cli)
+* Resource group Name : rg-shared-demo-003 (using terraform)
+
+## 2. Storage
+Azure Storage is a highly scalable, secure, and durable cloud storage solution for both structured and unstructured data. 
+It supports multiple storage types to meet a wide range of data and application requirements.
+
+### Type of Storage
+* Blob Storage: For unstructured data like images, videos, backups, and documents.
+  * Access Tiers: **Hot**: Frequent access, **Cool**: Infrequent access, **Archive**: Rarely accessed data with long retrieval times.
+  * Security: Use SAS tokens for fine-grained, time-limited access.
+    
+* File Storage: Fully managed shared file systems using SMB protocol.
+   example : Shared file systems in case of  enterprise app migration or in operational requirement for having shared storage.
+  
+* Table Storage: NoSQL key-value store for structured, non-relational data.
+* Queue Storage: Message storage for decoupled communication between components.
+
+| Tier         | Description                                           | Use Cases                           |
+| ------------ | ----------------------------------------------------- | ----------------------------------- |
+| **Standard** | Backed by HDDs; cost-effective, good for general use  | Backup, archives, infrequent access |
+| **Premium**  | Backed by SSDs; low-latency, high-performance storage | High IOPS workloads, databases      |
+
+| SKU Name    | Replication Type               | Description                                        |
+| ----------- | ------------------------------ | -------------------------------------------------- |
+| **LRS**     | Locally Redundant Storage      | 3 copies within a single data center in a region   |
+| **ZRS**     | Zone-Redundant Storage         | 3 copies across **availability zones** in a region |
+| **GRS**     | Geo-Redundant Storage          | 3 copies in primary + 3 in paired region           |
+| **GZRS**    | Geo-Zone-Redundant Storage     | ZRS in primary + geo-replication to paired region  |
+| **RA-GRS**  | Read-Access Geo-Redundant      | GRS with **read access** to the secondary region   |
+| **RA-GZRS** | Read-Access Geo-Zone Redundant | GZRS with read access to the secondary region      |
+
+| Feature                   | LRS               | ZRS               | GRS                                |
+| ------------------------- | ----------------- | ----------------- | --------------------------------   |
+| Redundancy Scope          | Single zone       | Across 3 zones    | Across 2 regions                   |
+| Number of Copies          | 3                 | 3                 | 6 (3 primary + 3 secondary)        |
+| Cross-Region Protection   | ❌ No              | ❌ No              | ✅ Yes                            |
+| Zone Failure Protection   | ❌ No              | ✅ Yes             | ✅ Yes (in secondary)             |
+| Region Failure Protection | ❌ No              | ❌ No              | ✅ Yes                            |
+| Read Access to Secondary  | ❌ No              | ❌ No              | ❌ No (unless RA-GRS)             |
+| Use Cases                 | Dev/test, backups | App data, content | DR, regulatory, critical backups |
+
+
+#### Create a storage account using portal and Az CLI or Terraform 
+* Storage account : sashareddemo001 (using portal)
+* Storage account : sashareddemo002 (using az cli)  
+  `az storage account create --name sashareddemo002 --resource-group rg-shared-demo-002 --location eastus --sku Standard_LRS --kind StorageV2 --access-tier Hot`  
+* Storage account : sa-shared-demo-003 (using terraform) --optional
+
+  
+  
