@@ -1,5 +1,3 @@
-# azure-cloud-infra
-
 ## 1. Azure Cloud Core Concepts
 Azure is Microsoft’s cloud computing platform offering Infrastructure as a Service (IaaS),
 Platform as a Service (PaaS), and Software as a Service (SaaS), Also CaaS (Container as Service). It provides scalable, pay-as-you-
