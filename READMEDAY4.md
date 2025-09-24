@@ -25,3 +25,22 @@
 #### 4. Download Azure certificate, paste it into your settings.json under "idp" -> "x509cert"
 
 #### 5. Assign users to the app under Users and groups
+
+
+### Flow Authentioncation Flow
+
+sequenceDiagram
+    participant User
+    participant App as Application (SP)
+    participant Azure as Azure (IdP)
+
+    App: 1. User tries to access a secured page on the application.
+      App->>User: 2. Redirects to Azure for authentication.
+        User->>Azure: 3. Sends a SAML authentication request to Azure.
+          Azure->>User: 4. Prompts user for credentials (e.g., username and password).
+            User->>Azure: 5. User provides credentials.
+              Azure->>Azure: 6. Validates credentials and checks security policies (e.g., MFA).
+                Azure->>App: 7. Sends a signed SAML response containing an assertion and user attributes.
+                  App->>App: 8. Validates the SAML assertion with Azure's public certificate.
+                    App->>User: 9. Grants access to the user and redirects to the original requested page.
+
