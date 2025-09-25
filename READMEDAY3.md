@@ -87,3 +87,8 @@ Traffic Manager uses DNS to route users to endpoints based on routing policies s
 
   <img width="3052" height="2404" alt="image" src="https://github.com/user-attachments/assets/dd4eadb4-a12e-4904-bed6-9a0434b1f712" />
 
+  #### Global load balancer with backend as regionals public LB
+  
+  <img width="659" height="291" alt="image" src="https://github.com/user-attachments/assets/f499ee05-5043-46f0-908d-08fd0b59fe46" />
+
+
