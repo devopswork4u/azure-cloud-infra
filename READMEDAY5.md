@@ -4,12 +4,11 @@
 
 ##### Sample queries for Azure SQL
 
-INSERT INTO [dbo].[Todos] (Task)
-VALUES ('Hello from .NetApp');
+`INSERT INTO [dbo].[Todos] (Task)
+VALUES ('Hello from .NetApp');`  
 
-INSERT INTO [dbo].[Todos] (Task)
-VALUES ('Task for today is SQL Demo');
+`INSERT INTO [dbo].[Todos] (Task)
+VALUES ('Task for today is SQL Demo');`  
 
-
-Select * from [dbo].[Todos];
-delete from [dbo].[Todos];
+`Select * from [dbo].[Todos];
+delete from [dbo].[Todos];`  
