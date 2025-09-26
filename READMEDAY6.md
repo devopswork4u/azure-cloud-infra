@@ -39,3 +39,8 @@ Here are just a few examples of how organizations across a range of industries u
 ### Multiple protocol access to Azure Data Lake
 
 <img width="1189" height="442" alt="image" src="https://github.com/user-attachments/assets/13329827-3a40-4b2e-b984-98c0ba64dc49" />
+
+### Diff between  blob vs Azure Data lake v2
+
+<img width="1108" height="548" alt="image" src="https://github.com/user-attachments/assets/7f80e610-b3b4-4620-bf21-ad508a1e23a6" />
+
