@@ -20,3 +20,17 @@ Here are just a few examples of how organizations across a range of industries u
 **Sales**. Data scientists and sales engineers often build predictive models to help determine customer behavior and reduce overall churn.
 
 <img width="468" height="300" alt="image" src="https://github.com/user-attachments/assets/3fa934d2-e3ff-47dd-857c-d2f78bdc0941" />
+
+
+## Azure Data Lake vs Data Warehouse
+
+| Category     | Data Lake                                          | Data Warehouse                                                   |
+|--------------|----------------------------------------------------|------------------------------------------------------------------|
+| **Type**     | Structured, semi-structured, unstructured          | Structured                                                       |
+|              | Relational, non-relational                         | Relational                                                       |
+| **Schema**   | Schema on read                                     | Schema on write                                                  |
+| **Format**   | Raw, unfiltered                                    | Processed, vetted                                                |
+| **Sources**  | Big data, IoT, social media, streaming data        | Application, business, transactional data, batch reporting       |
+| **Scalability** | Easy to scale at a low cost                    | Difficult and expensive to scale                                 |
+| **Users**    | Data scientists, data engineers                    | Data warehouse professionals, business analysts                  |
+| **Use Cases**| Machine learning, predictive analytics, real-time analytics | Core reporting, BI                                      |
