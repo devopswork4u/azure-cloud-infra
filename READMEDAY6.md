@@ -44,3 +44,6 @@ Here are just a few examples of how organizations across a range of industries u
 
 <img width="1108" height="548" alt="image" src="https://github.com/user-attachments/assets/7f80e610-b3b4-4620-bf21-ad508a1e23a6" />
 
+<img width="1105" height="590" alt="image" src="https://github.com/user-attachments/assets/fb91e570-8dd3-4f50-8559-00fba559d693" />
+
+
