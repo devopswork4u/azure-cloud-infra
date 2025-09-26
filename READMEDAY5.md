@@ -13,3 +13,9 @@ VALUES ('Task for today is SQL Demo');`
 
 `Select * from [dbo].[Todos];
 delete from [dbo].[Todos];`  
+
+
+#### Elastic pool Azure Databases
+
+<img width="383" height="375" alt="image" src="https://github.com/user-attachments/assets/6a527b9d-6877-4c57-a812-9ba8e9347d0e" />
+
