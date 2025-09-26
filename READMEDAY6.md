@@ -21,6 +21,12 @@ Here are just a few examples of how organizations across a range of industries u
 
 <img width="468" height="300" alt="image" src="https://github.com/user-attachments/assets/3fa934d2-e3ff-47dd-857c-d2f78bdc0941" />
 
+### Azure Data Lake Gen2 Access endpoints
+
+<img width="1186" height="583" alt="image" src="https://github.com/user-attachments/assets/10c8e8ed-01d0-4906-8515-74397df293d8" />
+
+
+<img width="1186" height="583" alt="image" src="https://github.com/user-attachments/assets/1d0e928a-9ca9-4a61-bfa3-4921a3d17580" />
 
 ## Azure Data Lake vs Data Warehouse
 
