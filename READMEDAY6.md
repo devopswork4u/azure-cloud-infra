@@ -40,11 +40,15 @@ Here are just a few examples of how organizations across a range of industries u
 
 <img width="1189" height="442" alt="image" src="https://github.com/user-attachments/assets/13329827-3a40-4b2e-b984-98c0ba64dc49" />
 
-### Diff between  blob vs Azure Data lake v2
+  ### 1.  Diff between  blob vs Azure Data lake v2
 
 <img width="1108" height="548" alt="image" src="https://github.com/user-attachments/assets/7f80e610-b3b4-4620-bf21-ad508a1e23a6" />
 
+  ### 2. Diff between  blob vs Azure Data lake v2
+
 <img width="1105" height="590" alt="image" src="https://github.com/user-attachments/assets/fb91e570-8dd3-4f50-8559-00fba559d693" />
+
+  ### 3. Diff between  blob vs Azure Data lake v2
 
 <img width="1105" height="590" alt="image" src="https://github.com/user-attachments/assets/8962213a-68af-4127-ae87-d37b34e674e9" />
 
