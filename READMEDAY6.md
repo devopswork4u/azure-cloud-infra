@@ -34,3 +34,8 @@ Here are just a few examples of how organizations across a range of industries u
 | **Scalability** | Easy to scale at a low cost                    | Difficult and expensive to scale                                 |
 | **Users**    | Data scientists, data engineers                    | Data warehouse professionals, business analysts                  |
 | **Use Cases**| Machine learning, predictive analytics, real-time analytics | Core reporting, BI                                      |
+
+
+### Multiple protocol access to Azure Data Lake
+
+<img width="1189" height="442" alt="image" src="https://github.com/user-attachments/assets/13329827-3a40-4b2e-b984-98c0ba64dc49" />
