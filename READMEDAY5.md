@@ -27,3 +27,6 @@ delete from [dbo].[Todos];`
 <img width="383" height="194" alt="image" src="https://github.com/user-attachments/assets/9ccc9e6e-c66f-4118-bebc-1bc44748890b" />
 
 
+#### Azure SQL Managed Instance Failover 
+
+<img width="558" height="338" alt="image" src="https://github.com/user-attachments/assets/819eabfa-c365-498a-8dd6-7e39a8dc3060" />
