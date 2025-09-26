@@ -19,3 +19,11 @@ delete from [dbo].[Todos];`
 
 <img width="383" height="375" alt="image" src="https://github.com/user-attachments/assets/6a527b9d-6877-4c57-a812-9ba8e9347d0e" />
 
+<img width="766" height="549" alt="image" src="https://github.com/user-attachments/assets/77f4b5a8-2c3d-47f5-9352-7b4503a95fea" />
+
+
+
+### Migration Cycle 
+<img width="383" height="194" alt="image" src="https://github.com/user-attachments/assets/9ccc9e6e-c66f-4118-bebc-1bc44748890b" />
+
+
