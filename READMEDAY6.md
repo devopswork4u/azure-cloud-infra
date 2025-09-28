@@ -1,13 +1,10 @@
 ### Keyvault secret authentication and Printing
 
 
-`az webapp config appsettings set \
-  --resource-group rg-data-eastus2-dev\
-  --name keyvault-demo-app \
-  --settings \
-    KEY_VAULT_URL=https://kv-data-eastus2-dev.vault.azure.net/ \
-    SECRET_NAME=PY-DEMO-SECRET
-`
+`az webapp config appsettings set --resource-group rg-data-eastus2-dev --name keyvault-demo-app  --settings  KEY_VAULT_URL=https://kv-data-eastus2-dev.vault.azure.net/ SECRET_NAME=PY-DEMO-SECRET`
+
+`az webapp identity assign --resource-group rg-data-eastus2-dev --name keyvault-demo-app`  
+
 #### Python App code which is deployed as WebApp
 `https://github.com/devopswork4u/keyvault-demp-app`
 
