@@ -3,17 +3,25 @@
 <img width="662" height="415" alt="image" src="https://github.com/user-attachments/assets/a926b94d-da5b-402a-a5ed-cf6ebf00f688" />
 
 
-* Create 1 keyvault with multiple secrets like PY-DEMO-SECRET and SQLDB-CONNECTION
-* Now Deploy Azure Web APP with Python RUNTIME as "PYTHON:3.9" using Portal
+* Create 1 keyvault `kv-shared-eus2-001` with secrets example like SQLDB-CONNECTION
+  
+* Now Deploy Azure Web APP `webapp-keyvault-demo-001` with Python RUNTIME as "PYTHON:3.9" using Portal
+  
 * Configure Envrionmental values in Web APP using portal or below command:
   `az webapp config appsettings set --resource-group rg-data-eastus2-dev --name keyvault-demo-app  --settings  KEY_VAULT_URL=https://kv-data-eastus2-dev.vault.azure.net/ SQLDB_PASSWORD=SQLDB-PASSWORD`
+  
 * Assign managed identity to Web APP and provide Vault Secret office role 
 `az webapp identity assign --resource-group rg-data-eastus2-dev --name keyvault-demo-app`
 
 * Deploy the Below application to Azure Web App 
 
 #### Python App code which is deployed as WebApp
-`https://github.com/devopswork4u/keyvault-demp-app`
+ `https://github.com/devopswork4u/keyvault-demp-app`
+
+
+
+
+
 
 ### SQL Server Migration 
   #### Migrate SQL server from onpremise (VM hosted) to Azure SQL
