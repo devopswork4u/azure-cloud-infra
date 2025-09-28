@@ -3,7 +3,8 @@
 <img width="662" height="415" alt="image" src="https://github.com/user-attachments/assets/a926b94d-da5b-402a-a5ed-cf6ebf00f688" />
 
 
-* Create 1 keyvault `kv-shared-eus2-001` with secrets example like SQLDB-CONNECTION
+* Create 1 keyvault `kv-shared-eus2-001` with secrets example like `SQLDB-CONNECTION`
+  * Note to create secret in vault you need `Key Vault Secrets Officer`
   
 * Now Deploy Azure Web APP `webapp-keyvault-demo-001` with Python RUNTIME as "PYTHON:3.9" using Portal
   
