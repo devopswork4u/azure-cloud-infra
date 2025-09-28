@@ -1,5 +1,6 @@
 ### Keyvault secret authentication and Printing
 
+<img width="662" height="415" alt="image" src="https://github.com/user-attachments/assets/a926b94d-da5b-402a-a5ed-cf6ebf00f688" />
 
 
 * Create 1 keyvault with multiple secrets like PY-DEMO-SECRET and SQLDB-CONNECTION
@@ -22,6 +23,7 @@
   * Using SSMS
     
   
+<img width="662" height="415" alt="image" src="https://github.com/user-attachments/assets/85964279-a262-4767-b030-2a8b43c17aa9" />
 
 
 
