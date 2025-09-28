@@ -5,7 +5,7 @@
 * Create 1 keyvault with multiple secrets like PY-DEMO-SECRET and SQLDB-CONNECTION
 * Now Deploy Azure Web APP with Python RUNTIME as "PYTHON:3.9" using Portal
 * Configure Envrionmental values in Web APP using portal or below command:
-  `az webapp config appsettings set --resource-group rg-data-eastus2-dev --name keyvault-demo-app  --settings  KEY_VAULT_URL=https://kv-data-eastus2-dev.vault.azure.net/ SECRET_NAME=PY-DEMO-SECRET SQLDB_CONNECTION=SQLDB-CONNECTION`
+  `az webapp config appsettings set --resource-group rg-data-eastus2-dev --name keyvault-demo-app  --settings  KEY_VAULT_URL=https://kv-data-eastus2-dev.vault.azure.net/ SQLDB_PASSWORD=SQLDB-PASSWORD`
 * Assign managed identity to Web APP and provide Vault Secret office role 
 `az webapp identity assign --resource-group rg-data-eastus2-dev --name keyvault-demo-app`
 
