@@ -16,6 +16,11 @@
 
 ### SQL Server Migration 
   #### Migrate SQL server from onpremise (VM hosted) to Azure SQL
+* SQL to SQL migration 
+  * Using DMA
+  * Using DMS
+  * Using SSMS
+    
   
 
 
