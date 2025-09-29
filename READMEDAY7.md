@@ -10,7 +10,8 @@
 **Step 1 :**  Data factory `datafactory-demo-001`  studio  
 **Step 2 :**  configure integration runtime  
 
-    <img width="842" height="571" alt="image" src="https://github.com/user-attachments/assets/4ae8f526-4e99-4547-892d-92a397bff0cf" />  
+<img width="1340" height="787" alt="image" src="https://github.com/user-attachments/assets/970a615b-3a77-4c6a-814a-436b8e950507" />
+
     
 **Step 3 :**  After installing integration runtime using key , perform test connection from data factory studio      
 
