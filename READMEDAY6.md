@@ -1,6 +1,7 @@
 ### Keyvault secret authentication and Printing
 
-<img width="662" height="415" alt="image" src="https://github.com/user-attachments/assets/a926b94d-da5b-402a-a5ed-cf6ebf00f688" />
+<img width="763" height="571" alt="image" src="https://github.com/user-attachments/assets/04b41514-8405-4475-95e7-e4f31f87cf65" />
+
 
 
 * Create 1 keyvault `kv-shared-eus2-001` with secrets example like `SQLDB-CONNECTION`
