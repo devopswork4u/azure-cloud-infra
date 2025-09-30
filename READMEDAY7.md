@@ -85,7 +85,7 @@ Gen2: Actively developed and recommended by Microsoft for all new Data Lake impl
 
 
 
-### Intragration runtime settting:  
+### Intragration runtime settting in case permission issue:  
 * if file access issue `cd "C:\Program Files\Microsoft Integration Runtime\5.0\Shared"`  
 * run `./dmgcmd -DisableLocalFolderPathValidation`  
 
