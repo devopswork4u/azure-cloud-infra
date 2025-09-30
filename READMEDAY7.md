@@ -37,4 +37,17 @@
 
 ##### Now create two more container and create the filesystem by using above command 
     * container name silver
-    * container name gold 
+    * container name gold
+    * create data format ``
+
+1. to list the imported csv from Datalake to databricks filesystems `dbutils.fs.ls("/mnt/vehicledata")`
+2. `dbutils.fs.ls("/mnt/vehicledata")`  
+3. Now print the schema `location_df.printSchema()`
+4. Change the schema format to integer for `location_df = spark.read.format("csv").option("header", "true").option("inferSchema", "true").load("/mnt/vehicledata/locations.csv")`
+5. Now print the schema again `location_df.printSchema()`
+6. to print `location_df.show()`
+7. Change the column data to integer and remove the comma `location_df=location_df.withColumn("population",regexp_replace("population",",","").cast("int"))`
+8. move the formated data to Datalake new stage container `location_df.write.option("header","true").csv("/mnt/silver/location.csv")`  
+
+
+    
