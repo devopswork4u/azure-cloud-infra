@@ -23,12 +23,15 @@
 * run `./dmgcmd -DisableLocalFolderPathValidation`  
 
 ### Databricks configurations 
-
+ * Create secret using browser --> "/secrets/createScope" with keyvault URL and keyvault ID
+ * Create a secret in AKV for storage account key
+ * 
 #### Create a new notebook and connect to datalake using below : 
 `dbutils.fs.mount(
-    soucerce="wasbs://vehicledata@sadatalakedemo002.blob.core.windows.net",
+    source="wasbs://vehicledata@sadatalakedemo002.blob.core.windows.net/",
     mount_point="/mnt/vehicledata",
-    extra_config={
-        "fs.azure.sas.vehicledata.sadatalakedemo002.blob.core.windows.net": dbutils.secrets.get(scope="storage_scope", key="storage_key)
+    extra_configs={
+        "fs.azure.account.key.sadatalakedemo002.blob.core.windows.net": dbutils.secrets.get('dbScope', 'saSecret')
+    }
 )`
 
