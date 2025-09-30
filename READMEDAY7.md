@@ -35,3 +35,6 @@
     }
 )`
 
+##### Now create two more container and create the filesystem by using above command 
+    * container name silver
+    * container name gold 
