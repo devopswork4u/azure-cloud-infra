@@ -69,7 +69,7 @@ Gen2: Actively developed and recommended by Microsoft for all new Data Lake impl
 
 <img width="1164" height="616" alt="image" src="https://github.com/user-attachments/assets/bee6fd6f-3290-40a7-9baa-fa67212af3b9" />
 
-[Full Terraform code for infra deployment](`https://github.com/devopswork4u/tf_data_transformation`)
+[Full Terraform code for infra deployment](https://github.com/devopswork4u/tf_data_transformation)
 
 
 **Step 1 :** Download sample data from `https://mavenanalytics.io/data-playground`  
