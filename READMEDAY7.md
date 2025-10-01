@@ -67,6 +67,10 @@ Gen2: Actively developed and recommended by Microsoft for all new Data Lake impl
 
 ### Azure Datalake overview and Data trasformation cycle
 
+<img width="1164" height="616" alt="image" src="https://github.com/user-attachments/assets/bee6fd6f-3290-40a7-9baa-fa67212af3b9" />
+
+`https://github.com/devopswork4u/tf_data_transformation`
+
 **Step 1 :** Download sample data from `https://mavenanalytics.io/data-playground`  
 **Step 2 :** Create the data factory `datafactory-demo-001` in azure  
 **Step 3 :** Create storage account for Datalake Gen2 `sadatalakedemo001`  
