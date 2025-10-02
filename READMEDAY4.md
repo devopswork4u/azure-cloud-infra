@@ -18,9 +18,11 @@
 ##### B. Configure Single Sign-On
 * Select Single sign-on → SAML
 * Basic SAML Configuration:
-* Identifier (Entity ID): http://localhost:5000/metadata/
-* Reply URL (ACS): http://localhost:5000/acs/
-* Sign-on URL: http://localhost:5000/login/
+* Identifier (Entity ID): http://localhost:4242/metadata/
+* Reply URL (ACS): http://localhost:4242/acs/
+* Sign-on URL: http://localhost:4242/login/
+
+Note: Update the port and URL in https://github.com/devopswork4u/saml-demo-app/blob/main/saml/settings.json
 
 #### 4. Download Azure certificate, paste it into your settings.json under "idp" -> "x509cert"
 
