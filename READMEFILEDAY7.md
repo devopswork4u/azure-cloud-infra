@@ -20,6 +20,8 @@
 `df_clean = df.dropna(subset=["patient_id", "age"])`
 
 #### Cast columns to correct data types
-`df_casted = df_clean.withColumn("age", col("age").cast("int"))`
+`df_casted = df.withColumn("ZIP", col("ZIP").cast("int"))`
+`df.printSchema()`
+
 
 
