@@ -1,3 +1,18 @@
+#### Azure Synapse Analytics
+
+Azure Synapse Analytics is a cloud-based data platform from Microsoft that helps you collect, store, analyze, and understand large amounts of data — all in one place.
+
+Example :
+
+Imagine a giant, smart warehouse in the cloud where you can:  
+  * Store data (structured like Excel, or unstructured like logs or JSON files)  
+  * Clean and organize it (using pipelines and scripts)  
+  * Run reports or ask questions (using SQL or other tools)  
+  * Analyze trends or build dashboards (to help with business decisions)  
+  * Do machine learning or real-time processing (if needed)  
+
+
+
 •	Create a notebook under > Develop > Notebook
 •	Create Apache spark pool before running the notebook (approximately takes 30 seconds) 
 •	Create managed identity and assign blob contributor or similar role to it and attach the managed identity to synapse
