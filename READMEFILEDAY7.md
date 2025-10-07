@@ -1,0 +1,27 @@
+•	Create a notebook under > Develop > Notebook
+•	Create Apache spark pool before running the notebook (approximately takes 30 seconds) 
+•	Create managed identity and assign blob contributor or similar role to it and attach the managed identity to synapse
+
+
+file_path = "abfss://sourcedata@steastus2dev001.dfs.core.windows.net/payers.csv"
+
+df = spark.read.option("header", "true").csv(file_path)
+df.show(5)
+
+
+df.printSchema()
+df.describe().show()
+df.select("column1", "column2").show(5)
+<img width="468" height="362" alt="image" src="https://github.com/user-attachments/assets/30c882e7-a69c-4255-85a3-c06492c93fa2" />
+
+
+
+from pyspark.sql.functions import col
+
+# Remove rows with nulls in important columns
+df_clean = df.dropna(subset=["patient_id", "age"])
+
+# Cast columns to correct data types
+df_casted = df_clean.withColumn("age", col("age").cast("int"))
+
+
