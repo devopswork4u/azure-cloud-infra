@@ -24,4 +24,7 @@
 `df.printSchema()`
 
 
+`output_path = "abfss://raw@steastus2dev001.dfs.core.windows.net/data/processed/patients_cleaned.parquet"`
+
+`df_casted.write.mode("overwrite").parquet(output_path)`
 
