@@ -59,3 +59,12 @@ Imagine a giant, smart warehouse in the cloud where you can:
 
 `df_casted.write.mode("overwrite").parquet(output_path)`
 
+
+`flat_df = df.select(
+    "userId",
+    "eventTime",
+    "event.type",
+    "event.page",
+    "event.details.*"
+)
+
