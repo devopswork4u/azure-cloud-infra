@@ -16,6 +16,7 @@
 `df_formated.coalesce(1).write.mode("overwrite").option("header", True).csv(output_path)`
 
 
+#### All Command to import data and show on Synapse
 
 `from pyspark.sql.functions import col`
 
@@ -30,3 +31,9 @@ df_formated = df.select("Id", "NAME", "ADDRESS", "CITY","STATE_HEADQUARTERED", "
 `df_formated.show()`
 
 `df_formated.printSchema()`
+
+#### Filter null record
+
+``
+
+
