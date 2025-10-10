@@ -10,7 +10,7 @@
 #### validate selected data on Synapse workspace 
 `df_formated.show()`
 
-####
+#### push formated data to DataLake again
 `output_path = "abfss://rawdata@<storageaccount>.dfs.core.windows.net/formated/"`
 
 `df_formated.coalesce(1).write.mode("overwrite").option("header", True).csv(output_path)`
@@ -22,7 +22,7 @@
 
 `df = spark.read.option("multiline", "true").json("abfss://rawdata@saseastus2dev001.dfs.core.windows.net/company.json")`
 
-df_formated = df.select("Id", "NAME", "ADDRESS", "CITY","STATE_HEADQUARTERED", "ZIP", "PHONE")`
+`df_formated = df.select("Id", "NAME", "ADDRESS", "CITY","STATE_HEADQUARTERED", "ZIP", "PHONE")`
 
 `output_path = "abfss://sourcedata@steastus2dev001.dfs.core.windows.net/formated/"`
 
