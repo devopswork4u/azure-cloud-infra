@@ -15,3 +15,18 @@
 
 `df_formated.coalesce(1).write.mode("overwrite").option("header", True).csv(output_path)`
 
+
+
+`from pyspark.sql.functions import col`
+
+`df = spark.read.option("multiline", "true").json("abfss://rawdata@saseastus2dev001.dfs.core.windows.net/company.json")`
+
+df_formated = df.select("Id", "NAME", "ADDRESS", "CITY","STATE_HEADQUARTERED", "ZIP", "PHONE")`
+
+`output_path = "abfss://sourcedata@steastus2dev001.dfs.core.windows.net/formated/"`
+
+`df_formated.coalesce(1).write.mode("overwrite").option("header", True).csv(output_path)`
+
+`df_formated.show()`
+
+`df_formated.printSchema()`
